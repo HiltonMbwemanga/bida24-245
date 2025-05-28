@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffalo - The Black Death | The Big 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .animal-detail {
+            max-width: 1200px;
+            margin: 120px auto 0;
+            padding: 2rem;
+        }
+
+        .animal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .animal-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .animal-image-large {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .animal-info {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .animal-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .facts-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .facts-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .facts-list li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .animal-content {
+                grid-template-columns: 1fr;
+            }
+
+            .animal-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Big 5</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lion.html">Lion</a></li>
+                <li><a href="elephant.html">Elephant</a></li>
+                <li><a href="leopard.html">Leopard</a></li>
+                <li><a href="rhino.html">Rhino</a></li>
+                <li><a href="buffalo.html" class="active">Buffalo</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="animal-detail">
+        <div class="animal-header">
+            <h1>The Buffalo</h1>
+            <p>The Black Death</p>
+        </div>
+
+        <div class="animal-content">
+            <div class="animal-image">
+                <img src="buffalo.jpg" alt="Buffalo" class="animal-image-large">
+            </div>
+
+            <div class="animal-info">
+                <h2>About the Buffalo</h2>
+                <p>The African buffalo (Syncerus caffer) is one of the most dangerous animals in Africa, earning the nickname "Black Death" from hunters. Despite their herbivorous diet, these powerful animals are known for their unpredictable nature and strong herd mentality.</p>
+
+                <h2>Physical Characteristics</h2>
+                <p>African buffaloes are large, robust animals that can weigh up to 900 kg (2,000 lbs). They have distinctive curved horns that form a continuous bone shield across their forehead. Their dark, shaggy coat and muscular build make them imposing figures in the African savanna.</p>
+
+                <h2>Interesting Facts</h2>
+                <ul class="facts-list">
+                    <li>Buffaloes have a complex social structure with strong family bonds</li>
+                    <li>They can run at speeds up to 57 km/h (35 mph)</li>
+                    <li>Buffaloes are excellent swimmers and can cross deep rivers</li>
+                    <li>They have a symbiotic relationship with oxpecker birds</li>
+                    <li>Buffaloes have never been successfully domesticated</li>
+                </ul>
+
+                <h2>Habitat and Range</h2>
+                <p>African buffaloes are found throughout sub-Saharan Africa, inhabiting a variety of environments including savannas, grasslands, forests, and swamps. They require access to water and grazing areas, and their movements are often influenced by seasonal changes and food availability.</p>
+
+                <h2>Conservation Status</h2>
+                <p>While the African buffalo is currently listed as Least Concern on the IUCN Red List, their populations are declining in some areas due to habitat loss, hunting, and disease. Conservation efforts focus on maintaining their habitats and managing human-buffalo conflicts.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About The Big 5</h3>
+                <p>Discover the most iconic animals of the African savanna.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/TheBig5Wildlife" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/TheBig5Wildlife" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/thebig5wildlife" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Big 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

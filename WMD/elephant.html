@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephant - The Gentle Giant | The Big 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .animal-detail {
+            max-width: 1200px;
+            margin: 120px auto 0;
+            padding: 2rem;
+        }
+
+        .animal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .animal-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .animal-image-large {
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .animal-info {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .animal-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .facts-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .facts-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .facts-list li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .animal-content {
+                grid-template-columns: 1fr;
+            }
+
+            .animal-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Big 5</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lion.html">Lion</a></li>
+                <li><a href="elephant.html" class="active">Elephant</a></li>
+                <li><a href="leopard.html">Leopard</a></li>
+                <li><a href="rhino.html">Rhino</a></li>
+                <li><a href="buffalo.html">Buffalo</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="animal-detail">
+        <div class="animal-header">
+            <h1>The Elephant</h1>
+            <p>The Gentle Giant</p>
+        </div>
+
+        <div class="animal-content">
+            <div class="animal-image">
+                <img src="tlou.jpeg" alt="Elephant" class="animal-image-large">
+            </div>
+
+            <div class="animal-info">
+                <h2>About the Elephant</h2>
+                <p>The African elephant (Loxodonta africana) is the largest land mammal on Earth and one of the most intelligent animals. These magnificent creatures are known for their strong family bonds, complex social structures, and remarkable memory.</p>
+
+                <h2>Physical Characteristics</h2>
+                <p>African elephants can grow up to 13 feet tall and weigh up to 14,000 pounds. They are characterized by their long trunks, large ears, and tusks. Their trunks contain over 40,000 muscles and are used for breathing, drinking, eating, and communication.</p>
+
+                <h2>Interesting Facts</h2>
+                <ul class="facts-list">
+                    <li>Elephants can communicate through vibrations in the ground</li>
+                    <li>They have the longest pregnancy of any mammal (22 months)</li>
+                    <li>Elephants can recognize themselves in mirrors</li>
+                    <li>They show empathy and mourn their dead</li>
+                    <li>An elephant's trunk can hold up to 2 gallons of water</li>
+                </ul>
+
+                <h2>Habitat and Range</h2>
+                <p>African elephants are found in 37 countries across sub-Saharan Africa. They inhabit a variety of ecosystems, including savannas, forests, deserts, and marshes. They require large areas to roam and access to water sources.</p>
+
+                <h2>Conservation Status</h2>
+                <p>African elephants are listed as Vulnerable on the IUCN Red List. Their population has declined significantly due to poaching for ivory, habitat loss, and human-elephant conflict. Conservation efforts are crucial to ensure their survival.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About The Big 5</h3>
+                <p>Discover the most iconic animals of the African savanna.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Big 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

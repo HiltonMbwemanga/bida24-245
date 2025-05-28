@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big 5 - African Wildlife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Big 5</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="lion.html">Lion</a></li>
+                <li><a href="elephant.html">Elephant</a></li>
+                <li><a href="leopard.html">Leopard</a></li>
+                <li><a href="rhino.html">Rhino</a></li>
+                <li><a href="buffalo.html">Buffalo</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover the Big 5</h1>
+            <p>Explore the magnificent wildlife of Africa's most iconic animals</p>
+        </section>
+
+        <section class="animals-grid">
+            <div class="animal-card">
+                <img src="images/lion.jpg" alt="Lion" class="animal-image">
+                <h2>Lion</h2>
+                <p>The king of the jungle, known for its majestic mane and powerful roar.</p>
+                <a href="lion.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="animal-card">
+                <img src="images/elephant.jpg" alt="Elephant" class="animal-image">
+                <h2>Elephant</h2>
+                <p>The largest land mammal, known for its intelligence and strong family bonds.</p>
+                <a href="elephant.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="animal-card">
+                <img src="images/leopard.jpg" alt="Leopard" class="animal-image">
+                <h2>Leopard</h2>
+                <p>A stealthy predator with distinctive spotted coat and incredible climbing abilities.</p>
+                <a href="leopard.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="animal-card">
+                <img src="images/rhino.jpg" alt="Rhino" class="animal-image">
+                <h2>Rhino</h2>
+                <p>A prehistoric-looking creature with thick skin and distinctive horns.</p>
+                <a href="rhino.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="animal-card">
+                <img src="images/buffalo.jpg" alt="Buffalo" class="animal-image">
+                <h2>Buffalo</h2>
+                <p>A powerful herbivore known for its unpredictable nature and strong herd mentality.</p>
+                <a href="buffalo.html" class="btn">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About The Big 5</h3>
+                <p>Discover the most iconic animals of the African savanna.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lion.html">Lion</a></li>
+                    <li><a href="elephant.html">Elephant</a></li>
+                    <li><a href="leopard.html">Leopard</a></li>
+                    <li><a href="rhino.html">Rhino</a></li>
+                    <li><a href="buffalo.html">Buffalo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Big 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

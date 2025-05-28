@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhino - The Prehistoric Giant | The Big 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .animal-detail {
+            max-width: 1200px;
+            margin: 120px auto 0;
+            padding: 2rem;
+        }
+
+        .animal-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .animal-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .animal-image-large {
+            width: 100%;
+            height: 750px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .animal-info {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .animal-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .animal-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .facts-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .facts-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .facts-list li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .animal-content {
+                grid-template-columns: 1fr;
+            }
+
+            .animal-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Big 5</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lion.html">Lion</a></li>
+                <li><a href="elephant.html">Elephant</a></li>
+                <li><a href="leopard.html">Leopard</a></li>
+                <li><a href="rhino.html" class="active">Rhino</a></li>
+                <li><a href="buffalo.html">Buffalo</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="animal-detail">
+        <div class="animal-header">
+            <h1>The Rhino</h1>
+            <p>The Prehistoric Giant</p>
+        </div>
+
+        <div class="animal-content">
+            <div class="animal-image">
+                <img src="rhino.jpeg" alt="Rhino" class="animal-image-large">
+            </div>
+
+            <div class="animal-info">
+                <h2>About the Rhino</h2>
+                <p>The rhinoceros is one of the oldest living mammals on Earth, with ancestors dating back 50 million years. There are five species of rhino, with the black and white rhinos being native to Africa. These magnificent creatures are known for their thick skin and distinctive horns.</p>
+
+                <h2>Physical Characteristics</h2>
+                <p>Rhinos are massive animals, with the white rhino being the second-largest land mammal after elephants. They can weigh up to 2,900 kg (6,400 lbs) and stand up to 1.8 meters (6 feet) tall at the shoulder. Their thick, protective skin can be up to 5 cm (2 inches) thick.</p>
+
+                <h2>Interesting Facts</h2>
+                <ul class="facts-list">
+                    <li>Rhino horns are made of keratin, the same material as human hair and nails</li>
+                    <li>They can run at speeds up to 50 km/h (31 mph)</li>
+                    <li>Rhinos have poor eyesight but excellent hearing and sense of smell</li>
+                    <li>They can live up to 50 years in the wild</li>
+                    <li>Rhinos are actually gray, not black or white</li>
+                </ul>
+
+                <h2>Habitat and Range</h2>
+                <p>African rhinos are found in various habitats across sub-Saharan Africa, including savannas, grasslands, and tropical forests. They require large territories and access to water sources. Their range has significantly decreased due to human activities and habitat loss.</p>
+
+                <h2>Conservation Status</h2>
+                <p>Rhinos are critically endangered due to poaching for their horns and habitat loss. The black rhino population has declined by 97.6% since 1960. Conservation efforts include anti-poaching measures, habitat protection, and breeding programs to ensure their survival.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About The Big 5</h3>
+                <p>Discover the most iconic animals of the African savanna.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/TheBig5Wildlife" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/TheBig5Wildlife" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/thebig5wildlife" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Big 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

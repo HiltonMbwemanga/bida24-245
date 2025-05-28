@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - The Big 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-image: url('sunset2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .feedback-container {
+            max-width: 800px;
+            margin: 120px auto 0;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 1;
+        }
+
+        .feedback-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .feedback-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(104, 102, 102, 0.95);
+            font-weight: 700;
+        }
+
+        .feedback-header p {
+            color: #2c3e50;
+            text-shadow: 1px 1px 3px rgba(104, 102, 102, 0.95);
+        }
+
+        .feedback-form {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            color: #2c3e50;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 80%;
+            padding: 0.6rem;
+            border: 1px solid rgba(44, 62, 80, 0.3);
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-family: inherit;
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #2c3e50;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(44, 62, 80, 0.3);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #666;
+        }
+
+        .submit-btn {
+            background-color: rgba(52, 152, 219, 0.9);
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .submit-btn:hover {
+            background-color: rgba(41, 128, 185, 0.95);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .feedback-info {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .feedback-info p {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+        }
+
+        .social-links a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .feedback-container {
+                padding: 1rem;
+            }
+
+            .feedback-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Big 5</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lion.html">Lion</a></li>
+                <li><a href="elephant.html">Elephant</a></li>
+                <li><a href="leopard.html">Leopard</a></li>
+                <li><a href="rhino.html">Rhino</a></li>
+                <li><a href="buffalo.html">Buffalo</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="feedback-container">
+        <div class="feedback-header">
+            <h1>Share Your Feedback</h1>
+            <p>We'd love to hear your thoughts about our website and how we can improve it.</p>
+        </div>
+
+        <form class="feedback-form" id="feedbackForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Your Feedback</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <div class="feedback-info">
+            <p>You can also reach out to us through our social media channels:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/TheBig5Wildlife" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/TheBig5Wildlife" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/thebig5wildlife" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About The Big 5</h3>
+                <p>Discover the most iconic animals of the African savanna.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/TheBig5Wildlife" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/TheBig5Wildlife" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/thebig5wildlife" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Big 5. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const feedback = document.getElementById('feedback').value;
+
+            // Here you would typically send the data to a server
+            // For now, we'll just show an alert
+            alert('Thank you for your feedback! We appreciate your input.');
+            
+            // Clear the form
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
